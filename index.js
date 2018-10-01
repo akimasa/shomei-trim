@@ -2,10 +2,11 @@ var cropdetail;
 var PICTWIDTH = 30;
 var PICTHEIGHT = 40;
 function setsize() {
-  var height = $("#height").val();
-  var width = $("#width").val();
-  PICTHEIGHT = parseFloat(height);
-  PICTWIDTH = parseFloat(width);
+  var height = parseFloat($("#height").val());
+  var width = parseFloat($("#width").val());
+  PICTHEIGHT = height;
+  PICTWIDTH = width;
+  cropper.setAspectRatio(width/height);
 }
 function draw() {
   var canvas = document.getElementById("canvas");
