@@ -1,4 +1,4 @@
-証明写真をL判に配置するツール
+証明写真をL判に配置するツール [![Build Status](https://travis-ci.org/akimasa/shomei-trim.svg?branch=master)](https://travis-ci.org/akimasa/shomei-trim)
 ============================
 
 ## 使い方
