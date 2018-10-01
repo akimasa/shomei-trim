@@ -1,4 +1,5 @@
-var cropdetail;
+// var cropdetail;
+var cropper;
 var PICTWIDTH = 30;
 var PICTHEIGHT = 40;
 function setsize() {
@@ -55,9 +56,9 @@ function fileselect(e) {
     $image.cropper({
       aspectRatio: PICTWIDTH / PICTHEIGHT,
       autoCropArea: 1,
-      crop: function(event) {
-        cropdetail = event.detail;
-      }
+      // crop: function(event) {
+      //   cropdetail = event.detail;
+      // }
     });
 
     // Get the Cropper.js instance after initialized
@@ -65,3 +66,5 @@ function fileselect(e) {
   };
 }
 document.getElementById("file").addEventListener("change", fileselect);
+document.getElementById("setsize").addEventListener("click", setsize);
+document.getElementById("crop").addEventListener("click", crop);
