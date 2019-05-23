@@ -37,11 +37,9 @@ function draw() {
     y += hei + buf;
     x = buf;
   }
-  setTimeout(function() {
-    var outputjpg = canvas.toDataURL("image/jpeg");
-    $("#output").attr("src", outputjpg);
-    $("#outlink").attr("href", outputjpg);  
-  }, 500);
+  var outputjpg = canvas.toDataURL("image/jpeg");
+  $("#output").attr("src", outputjpg);
+  $("#outlink").attr("href", outputjpg);
 }
 function crop() {
   draw();
