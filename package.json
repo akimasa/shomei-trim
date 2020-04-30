@@ -6,7 +6,7 @@
   "dependencies": {
     "cropperjs": "^1.4.1",
     "eslint": "^5.6.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-cropper": "^1.0.0",
     "prettier": "^1.14.3"
   },
